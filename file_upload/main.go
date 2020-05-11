@@ -65,6 +65,8 @@ func uploadFileHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	fmt.Println(fileBytes)
+
 	tempfile.Write(fileBytes)
 
 	// 4. Return success/error response
